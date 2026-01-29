@@ -1,0 +1,31 @@
+body {
+    background-color:antiquewhite;
+}
+*{margin:2px;
+color:antiquewhite;
+font-family:'Courier New', Courier, monospace;
+font-weight:bold;
+}
+/* class names */
+.main-box3{
+    display:inline-block;
+    position: relative;
+    background: rgb(97,120,145);
+    width:350px;
+    height:250px;
+    align-content:center;
+    border-radius: 5%;
+    text-align:center;
+    padding: 5%;
+}
+.main-box4{
+    display:inline-block;
+    position: relative;
+    background: rgb(84,103,69);
+    width:350px;
+    height:125px;
+    align-content:center;
+    border-radius: 5%;
+    text-align: center;
+    padding: 2%;
+}

@@ -1,0 +1,19 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.EndBox1 { 
+    padding: 25px;
+    width: 300px;
+    background-color: sienna;
+    border-radius: 2%;
+    text-align: center;
+    font-size:medium;
+    color: antiquewhite;
+}

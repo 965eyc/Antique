@@ -1,0 +1,25 @@
+body {
+    height: 800px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+.mainbox{
+    position: absolute;
+    padding: 10px;
+    width: 90vw;
+    height: 30vh;
+    background-color: sienna;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    color: antiquewhite; 
+    font-size: clamp(0.8rem, 2vw, 2rem);
+    overflow-wrap:break-word;
+}

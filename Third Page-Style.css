@@ -48,3 +48,19 @@ body {
     text-align: center;
     color: antiquewhite; 
 }
+.button1, .button2 {
+    margin-top:8px;
+    background-color: sienna;
+    border: none;
+    border-radius: 20%;
+    color: rgb(41, 1, 16);
+    padding: 5px 10px;
+}
+.button1, .button2:hover{
+    margin-top:8px;
+    background-color: rgb(41, 1, 16);
+    border: none;
+    border-radius: 20%;
+    color: sienna
+    padding: 5px 10px;
+}

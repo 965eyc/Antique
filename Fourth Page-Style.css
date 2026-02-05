@@ -9,12 +9,10 @@ body {
 }
 
 .mainbox{
-    position: absolute;
-    top: 230px;
-    left:50px;
+    position: relative;
     padding: 10px;
-    width: 97vw;
-    height: 50vh;
+    width: 70vw;
+    height: 60vh;
     background-color: sienna;
     border-radius: 50%;
     display:flex;
@@ -27,13 +25,11 @@ body {
 }
 #overlay {
     position: absolute;
-    top: 120px;
-    width: 97vw;
+    top: 5px;
+    width: 70vw;
     height: 60vh;
 }
 .art-img {
-position: absolute;
-left: 50px;
   display: block;
   width: 100%;
   opacity: 1;
@@ -44,12 +40,13 @@ left: 50px;
 }
 #overlay2 {
     position: absolute;
-    top: 50px;
-    width: 110vw;
+    top:5px;
+    right:10px;
+    width: 70vw;
     height: 60vh;
     pointer-events: none;
 }
 .framer-img {
   display: block;
-  width: 110%;
+  width: 100%;
 }

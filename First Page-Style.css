@@ -10,7 +10,7 @@ body {
 .background-image{
     position:absolute;
     inset:0;
-    background-image: url("I-Spy-Recovered.png");
+    background-image: url("assets/images/I-Spy-Recovered.png");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;

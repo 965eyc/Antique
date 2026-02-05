@@ -10,9 +10,11 @@ body {
 
 .mainbox{
     position: absolute;
+    top: 230px;
+    left:50px;
     padding: 10px;
-    width: 90vw;
-    height: 30vh;
+    width: 97vw;
+    height: 50vh;
     background-color: sienna;
     border-radius: 50%;
     display:flex;
@@ -20,6 +22,34 @@ body {
     align-items:center;
     text-align: center;
     color: antiquewhite; 
-    font-size: clamp(0.8rem, 2vw, 2rem);
+    font-size: clamp(0.8rem, 3vw, 2rem);
     overflow-wrap:break-word;
+}
+#overlay {
+    position: absolute;
+    top: 120px;
+    width: 97vw;
+    height: 60vh;
+}
+.art-img {
+position: absolute;
+left: 50px;
+  display: block;
+  width: 100%;
+  opacity: 1;
+  cursor: pointer;
+}
+.art-img:hover {
+    opacity: 0;
+}
+#overlay2 {
+    position: absolute;
+    top: 50px;
+    width: 110vw;
+    height: 60vh;
+    pointer-events: none;
+}
+.framer-img {
+  display: block;
+  width: 110%;
 }

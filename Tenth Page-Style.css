@@ -62,9 +62,10 @@ body {
 }
 .button1 {
     position: absolute;
-    bottom:15px;
-    margin-top:8px;
+    bottom:40px;
     width: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0.4;
     background-color:antiquewhite;
     border: none;

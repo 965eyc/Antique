@@ -20,7 +20,7 @@ body {
 .fraunces-uniquifier{
     font-family: "Fraunces", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
+    font-weight: 700;
     font-style: normal;
     font-variation-settings:
       "SOFT" 2;
@@ -28,8 +28,14 @@ body {
     "WONK" 2;
   }
 .titlebox1 { 
-    padding: 60px;
-    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index:5;
+    padding: 22px;
+    height:250px;
+    width: 62%;
     background-color: sienna;
     border-radius: 5%;
     text-align: center;
@@ -37,11 +43,12 @@ body {
     color: antiquewhite;
 }
 #overlay {
-    position: fixed;
+    position: relative;
+    z-index: 10;
+    width: 600px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width:600px;
+    justify-content: center;
+    align-items: center;
 }
 .frame-img {
   display: block;

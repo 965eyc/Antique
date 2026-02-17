@@ -1,21 +1,17 @@
 body {
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position:relative;
-        overflow:hidden;
-}
-.background-image{
-    position:absolute;
-    inset:0;
-    background-image: url("assets/images/I-Spy-Recovered.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            animation: blur 30s ease-in-out infinite;
-            z-index: -1;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}.bg-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;  
+    height: auto;  
+    z-index: -1;
+    pointer-events: none;
 }
 .fraunces-uniquifier{
     font-family: "Fraunces", serif;
@@ -30,51 +26,113 @@ body {
 .infobox{
 background-color: sienna;
 width:100%;
-height:20%;
+height:15%;
 position: absolute;
-bottom:1px;
+bottom:-20px;
 text-align: center;
 color: antiquewhite;
 }
-.button{
-background-color: antiquewhite;
-  border:none;
-  border-radius: 25%;
-  color: rgb(41, 1, 16);
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration:dotted;
-  display: inline-block;
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 800;
-  cursor: pointer;
-  transition:all 0.5s ease;
+.leftbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 20%;
+    background-color: sienna;
+    z-index: 1;
+}
+.rightbox {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    width: 20%;
+    background-color: sienna;
+    z-index: 1;
+}
+.hotspot {
+    position: absolute;
+    top: 75%;    
+    left: 47%;    
+    width: 80px;  
+    height: 80px;
+    opacity: 0.0; 
+    background: ghostwhite; 
+    cursor: pointer;
+    z-index: 20;
+}
+.hotspot:hover {
+    opacity: 0.1;
+}
+.popup {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+.popup:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: antiquewhite;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: left;
+    border: 3px solid sienna;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+.button1{
+    position: absolute;
+    top: 50%;
+    left: 10%;      
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color:antiquewhite;
+    color: sienna;
+    border-radius: 20%;
+    padding: 8px 14px;
+    font-size: 1rem;
+    text-decoration: none;
 }
 .button2{
-background-color: antiquewhite;
-  border:none;
-  border-radius: 25%;
-  color: rgb(41, 1, 16);
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration:dotted;
-  display: inline-block;
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 800;
-  cursor: pointer;
-  transition:all 0.5s ease;
+    background-color:antiquewhite;
+    color: sienna;
+    border-radius: 20%;
+    padding: 8px 14px;
+    font-size: 1rem;
+    text-decoration: none;  
+    position: absolute;
+    top: 50%;
+    right: 10%;      
+    transform: translate(50%, -50%);
+    z-index: 10;
 }
-.button:hover {
+.button1:hover {
     background-color: sienna;
     color: antiquewhite;
-    transform: scale(1.1);
+    cursor: pointer;
 }
 .button2:hover {
     background-color: sienna;
     color: antiquewhite;
-    transform: scale(1.1);
-    }
-
-
+    cursor: pointer;
+}
